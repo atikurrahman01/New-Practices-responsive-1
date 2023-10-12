@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #fff;
+    padding: 0 10rem;
+    margin-top: 1rem;
+
+
+
+
+}
+
+.logo-and-name {
+    color: #000;
+    font-weight: 900;
+    font-size: large;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.navbar-main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    list-style: none;
+
+}
+
+.navbar-sub-container {
+    text-decoration: none;
+    padding: 1rem 1rem;
+    margin: 2%;
+
+}
+
+.navbar-sub-container li {
+
+    display: inline-block;
+
+    position: relative;
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.icon-1 {
+    color: #000;
+    font-size: 30px;
+    cursor: pointer;
+
+
+}
+
+
+
+
+
+
+/* media quarry use */
+
+
+@media screen and (max-width: 700px) {
+
+
+    nav {
+
+        display: block;
+
+
+        margin: 0;
+        padding: 1%;
+        margin-top: 1%;
+        margin-left: 1rem;
+        text-align: center;
+        background-color: bisque;
+
+
+
+
+
+    }
+
+    .navbar-sub-container {
+
+        text-decoration: none;
+        padding-left: 1%;
+        margin-right: 1%;
+
+
+    }
+
+    .navbar-main-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 8%;
+        list-style: none;
+
+
+
+    }
+
+
+}
+
+@media screen and (min-width: 700px) and (max-width: 1180px) {
+
+
+    nav {
+
+        display: block;
+
+
+        margin: 0;
+        padding: 1%;
+        margin-top: 1%;
+        margin-left: 1rem;
+        text-align: center;
+        background-color: bisque;
+
+
+
+
+
+    }
+
+
+
+
+    .navbar-main-container {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+
+
+
+
+    }
+
+
+}
