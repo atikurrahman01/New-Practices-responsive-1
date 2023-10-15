@@ -64,6 +64,71 @@ nav {
 
 }
 
+/* ---------------------------------------
+-----------main container part----------------- */
+
+.main-upper-container {
+    display: flex;
+    background-color: aliceblue;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 10rem;
+    margin-top: 1rem;
+}
+
+.text1-part {
+    width: 50%;
+
+
+
+}
+
+.text1-part>h1 {
+    font-size: 3rem;
+    padding: 1rem 0;
+    font-weight: 900;
+    color: #f96d00;
+
+
+
+}
+
+.text1-part>h1+p {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+
+
+
+
+}
+
+.button-section {
+    padding: 1rem 0;
+    background-color: #385170;
+    display: inline-block;
+    border-radius: 30px;
+
+}
+
+.button-section>a {
+    padding: 2rem 3rem;
+    text-decoration: none;
+    color: #f96d00;
+    font-size: 1.5rem;
+    font-weight: 900;
+
+}
+
+.button-section>:hover {
+    color: #ffffff8c;
+    transition: 0.8s;
+    box-shadow: 5px 5px 10px 2px#3851705e;
+    padding: 1rem 0;
+    border-radius: 30px;
+    padding: 1rem 3rem;
+
+}
+
 
 
 
