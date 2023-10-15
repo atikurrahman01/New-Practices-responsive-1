@@ -5,6 +5,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -69,7 +70,7 @@ nav {
 
 .main-upper-container {
     display: flex;
-    background-color: aliceblue;
+    background-color: rgba(240, 248, 255, 0.658);
     justify-content: space-between;
     align-items: center;
     padding: 1rem 10rem;
@@ -150,11 +151,125 @@ nav {
 }
 
 
+/*---------------------------------------------------- ecomarce site sectoin 
+----------------------------------------------------*/
+.ecomarc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 10rem;
+    margin-top: 3rem;
+    background-color: rgba(240, 248, 255, 0.329);
+    border-top: #0000001c 2px solid;
+    border-bottom: #0000001c 2px solid;
+}
+
+
+/* -----------------------------------
+card template section 
+--------------------------------------*/
+.card-header-section {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.card-section {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    padding: 0 10rem;
+
+}
+
+.card-container {
+
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: -1px 1px 9px -5px #333333a4;
+    ;
+
+}
+
+.card-img {
+    width: 100%;
+    height: 50%;
+    border-radius: 10px 10px 0 0;
+    padding: 0.5rem;
+
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0 0;
+    padding: 0.5rem;
+
+}
+
+.card-text {
+    padding: 0.5rem;
+
+    font-size: 1rem;
+    font-weight: 900;
 
 
 
 
-/* media quarry use */
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 900;
+    color: #0000008c;
+    padding: 0.5rem 0;
+    margin: 0;
+}
+
+.card-text>h1+h2+p {
+    color: rgba(128, 128, 128, 0.856);
+
+}
+
+.card-text>h1+h2+p>span {
+    color: orange;
+
+
+}
+
+.extra-container {
+    text-align: right;
+    padding-right: 17%;
+    margin-top: 1%;
+    color: #f96d00;
+}
+
+.extra-container>h3>a {
+    text-decoration: none;
+    color: #f96d00;
+}
+
+
+/*---------------------------------------------------------------------- main last container 
+-------------------------------------------------------------------------*/
+.main-last-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 10rem;
+    margin-top: 3rem;
+    background-color: rgba(240, 248, 255, 0.329);
+    border-top: #0000001c 2px solid;
+    border-bottom: #0000001c 2px solid;
+}
+
+.main-last-container>div {
+    width: ;
+    padding: 0 4rem;
+}
+
+/*--------------------------------------------------------------------- media quarry use 
+--------------------------------------------------------------------*/
 
 
 @media screen and (max-width: 700px) {
@@ -223,6 +338,8 @@ nav {
 
     }
 
+    /* main section  */
+
     .main-upper-container {
         display: flex;
         flex-direction: column;
@@ -264,87 +381,354 @@ nav {
         box-shadow: none;
     }
 
-
-
-
-}
-
-@media screen and (min-width: 700px) and (max-width: 1180px) {
-
-
-    nav {
-
-        display: block;
-
-
-        margin: 0;
-        padding: 1%;
-        margin-top: 1%;
-        margin-left: 1rem;
-        text-align: center;
-        background-color: white;
-
-
-
-
-
-    }
-
-
-
-
-    .navbar-main-container {
-
+    /* emarce side section */
+    .ecomarc {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        width: 100%;
-
-
-
-
-
+        padding: 2rem 0;
+        margin-top: 3rem;
+        background-color: rgba(240, 248, 255, 0.329);
+        border-top: #0000001c 2px solid;
+        border-bottom: #0000001c 2px solid;
     }
 
-    .main-upper-container {
+    .ecomarc>a {
+        margin: 1rem 0;
+    }
+
+    /* -----------------------------------card scetion-------------------------- */
+    .card-section {
+        margin-top: 2rem;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         padding: 0;
-        margin: 0%;
-        background-color: white;
+        margin: 1rem 4.5rem;
+
+
+
     }
 
-    .text1-part {
-        width: 100%;
+    .main-last-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         padding: 0;
-        margin: 0;
+        margin: 1rem 4.5rem;
+
+
+
+
+    }
+
+    .ml-text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        margin: 1rem 4.5rem;
+    }
+
+    .ml-text-container>h1 {
+        font-size: 2rem;
+        padding: 1rem 0;
+        font-weight: 900;
+        color: #f96d00;
         text-align: center;
-        margin-bottom: 1rem;
-
     }
 
-    .img-bacground {
+    .ml-text-container>p {
+        font-size: 1rem;
+        padding: 1rem 0;
+        font-weight: 900;
+        color: #0000008c;
+        text-align: center;
+    }
+
+    .ml-text-container>h1+p {
+        font-size: 1.5rem;
+        padding: 1rem 0;
+        text-align: center;
         width: 100%;
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        border-radius: 0;
-        margin-bottom: 1rem;
-        margin-right: 1rem;
-        margin-left: 1rem;
-        box-shadow: none;
     }
 
-    .img-bacground>img {
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        border-radius: 0;
-        margin-bottom: 1rem;
-        margin-right: 0;
-        margin-left: 0;
-        box-shadow: none;
+    .ml-text-container>h1+p>a {
+        text-decoration: none;
+        color: #f96d00;
+        font-size: 1.5rem;
     }
 
-}
+    .ml-img-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        margin: 1rem 4.5rem;
+    }
+
+
+
+    @media screen and (min-width: 700px) and (max-width: 1180px) {
+
+
+
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 8vh;
+            background-color: #fff;
+            padding: 0 10rem;
+            margin-top: 1rem;
+
+
+
+
+        }
+
+        .logo-and-name {
+            color: #000;
+            font-weight: 900;
+            font-size: large;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        .navbar-main-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 50%;
+            list-style: none;
+
+        }
+
+        .navbar-sub-container {
+            text-decoration: none;
+            padding: 1rem 1rem;
+            margin: 2%;
+
+        }
+
+        .navbar-sub-container li {
+
+            display: inline-block;
+
+            position: relative;
+            text-decoration: none;
+            color: #000;
+            font-size: 20px;
+            font-weight: 900;
+            text-transform: uppercase;
+            transition: 0.5s;
+        }
+
+        .icon-1 {
+            color: #000;
+            font-size: 30px;
+            cursor: pointer;
+
+
+        }
+
+
+
+        /* main section  */
+
+        .main-upper-container {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            margin: 0%;
+            background-color: white;
+        }
+
+        .text1-part {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            margin-bottom: 1rem;
+
+        }
+
+        .img-bacground {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            border-radius: 0;
+            margin-bottom: 1rem;
+            margin-right: 1rem;
+            margin-left: 1rem;
+            box-shadow: none;
+        }
+
+        .img-bacground>img {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            border-radius: 0;
+            margin-bottom: 1rem;
+            margin-right: 0;
+            margin-left: 0;
+            box-shadow: none;
+        }
+
+        /* emarce side section */
+        .ecomarc {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+            background-color: rgba(240, 248, 255, 0.329);
+            border-top: #0000001c 2px solid;
+            border-bottom: #0000001c 2px solid;
+        }
+
+        .ecomarc>a {
+            margin: 1rem 0;
+        }
+
+
+        .all-section {
+            margin: 0;
+            align-items: center;
+
+        }
+
+
+        nav {
+
+            display: block;
+
+
+            margin: 0;
+            padding: 0%;
+            margin-top: 1%;
+            text-align: center;
+            background-color: white;
+
+
+
+
+
+
+        }
+
+        .navbar-sub-container {
+            text-decoration: none;
+            padding: 1%;
+            margin: 4%;
+        }
+
+        .navbar-main-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 58%;
+            list-style: none;
+
+
+
+        }
+
+        .logo-and-name {
+            color: #000;
+            font-weight: 900;
+            font-size: small;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        .navbar-sub-container li {
+
+            display: inline-block;
+
+            position: relative;
+            text-decoration: none;
+            color: #000;
+            font-size: 12px;
+            font-weight: 900;
+            text-transform: uppercase;
+            transition: 0.5s;
+
+        }
+
+        /* main section  */
+
+        .main-upper-container {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            margin: 0%;
+            background-color: white;
+        }
+
+        .text1-part {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            margin-bottom: 1rem;
+
+        }
+
+        .img-bacground {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            border-radius: 0;
+            margin-bottom: 1rem;
+            margin-right: 1rem;
+            margin-left: 1rem;
+            box-shadow: none;
+        }
+
+        .img-bacground>img {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            border-radius: 0;
+            margin-bottom: 1rem;
+            margin-right: 0;
+            margin-left: 0;
+            box-shadow: none;
+        }
+
+        /* emarce side section */
+        .ecomarc {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+            background-color: rgba(240, 248, 255, 0.329);
+            border-top: #0000001c 2px solid;
+            border-bottom: #0000001c 2px solid;
+        }
+
+        .ecomarc>a {
+            margin: 1rem 0;
+        }
+
+        /* -----------------------------------card scetion-------------------------- */
+        .card-section {
+            margin-top: 2rem;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 1rem;
+            padding: 0 10rem;
+
+        }
+
+    }
